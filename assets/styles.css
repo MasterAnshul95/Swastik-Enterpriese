@@ -127,15 +127,18 @@ html.lenis, html.lenis body { height: auto; }
 /* ---------- Scroll progress ---------- */
 .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, #8a2e2e, #c0892e); z-index: 60; }
 
-/* ---------- floating WhatsApp + Call actions (every page) ---------- */
-.float-actions { position: fixed; right: 18px; bottom: 70px; z-index: 80; display: flex; flex-direction: column; gap: 12px; }
-@media (max-width: 700px) { .float-actions { bottom: 18px; } }
+/* ---------- floating WhatsApp + Call actions — one left, one right ---------- */
+.float-actions { display: contents; }
 .float-btn {
+  position: fixed; bottom: 70px; z-index: 80;
   display: inline-flex; align-items: center; gap: 0; overflow: hidden;
   height: 54px; width: 54px; border-radius: 999px; padding: 0; color: #fff;
   box-shadow: 0 12px 26px -10px rgba(0, 0, 0, 0.45);
   transition: width .35s cubic-bezier(.4,0,.2,1), transform .25s ease, box-shadow .25s ease;
 }
+.float-btn.wa { right: 18px; }
+.float-btn.call { left: 18px; }
+@media (max-width: 700px) { .float-btn { bottom: 18px; } }
 .float-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 32px -10px rgba(0, 0, 0, 0.5); }
 .float-btn svg { width: 26px; height: 26px; margin: 0 14px; flex: 0 0 auto; }
 .float-btn .flabel { white-space: nowrap; font-weight: 600; font-size: .9rem; opacity: 0; transition: opacity .25s ease; padding-right: 4px; }
