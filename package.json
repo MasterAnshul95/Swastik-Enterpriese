@@ -1,0 +1,10 @@
+{
+  "name": "swastik-enterprises-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Swastik Enterprises — industrial hardware, metals & custom fabrication website (HTML + Tailwind + GSAP + Lenis).",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "brand": {
+    "name": "Swastik Enterprises",
+    "short": "Swastik",
+    "tagline": "Hardware · Spices · Dry Fruits · Packaging",
+    "established": "Since 2015",
+    "blurb": "A multi-division wholesale supplier — industrial hardware, whole & ground spices, premium dry fruits and poly packaging, available loose or in bulk.",
+    "email": "sales@swastikenterprises.in",
+    "phone": "+91 95553 33698",
+    "whatsapp": "+91 95553 33698",
+    "address": {
+      "line1": "Ashok Vihar, Phase 1",
+      "line2": "Near Chhotu Ram Chowk"
+    },
+    "hours": "Mon – Sat · 9:00 AM – 7:00 PM IST",
+    "gst": "GSTIN 06ABCDE1234F1Z5"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/index.html"
+    },
+    {
+      "label": "Products",
+      "href": "/catalog.html"
+    },
+    {
+      "label": "Divisions",
+      "href": "/products.html"
+    },
+    {
+      "label": "Customers",
+      "href": "/industries.html"
+    },
+    {
+      "label": "About",
+      "href": "/about.html"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact.html"
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a Quote",
+      "href": "/contact.html"
+    },
+    "secondary": {
+      "label": "View Divisions",
+      "href": "/products.html"
+    }
+  },
+  "social": [
+    {
+      "label": "LinkedIn",
+      "href": "#"
+    },
+    {
+      "label": "Instagram",
+      "href": "#"
+    },
+    {
+      "label": "IndiaMART",
+      "href": "#"
+    }
+  ],
+  "marquee": [
+    "Haldi",
+    "Lal Mirch",
+    "Garam Masala",
+    "Jeera",
+    "Laung",
+    "Elaichi",
+    "Almonds",
+    "Cashews",
+    "Raisins",
+    "Bolts & Screws",
+    "Kali Mirch",
+    "Polybags",
+    "Hing",
+    "Dhaniya"
+  ],
+  "home": {
+    "seo": {
+      "title": "Swastik Enterprises | Hardware, Spices, Dry Fruits & Packaging — Wholesale",
+      "description": "Multi-division wholesale supplier: industrial hardware & fasteners, whole & ground spices, premium dry fruits and poly packaging — loose or in bulk, across India.",
+      "path": "/index.html"
+    },
+    "hero": {
+      "eyebrow": "Wholesale Supply · Bulk & Loose",
+      "titleLines": [
+        "One supplier",
+        "for all four",
+        "of your aisles"
+      ],
+      "highlight": "four",
+      "subtitle": "Industrial hardware, whole & ground spices, premium dry fruits and poly packaging — Swastik Enterprises supplies it all, loose or in bulk, delivered on time across India.",
+      "stat": {
+        "value": "4",
+        "label": "Divisions, one trusted supplier"
+      }
+    },
+    "intro": {
+      "label": "Who we are",
+      "title": "Four businesses, one reliable supplier.",
+      "body": "What began as a hardware counter in 2015 has grown into a four-division wholesale house — fasteners & metals, spices & masale, dry fruits & nuts, and poly packaging. One relationship, one invoice, one delivery for the things your business buys every week.",
+      "points": [
+        "Hardware, spices, dry fruits & packaging under one roof",
+        "Buy loose by the kilo or bulk by the truckload",
+        "Wholesale rates with quotes within 24 hours"
+      ]
+    },
+    "stats": [
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years in business"
+      },
+      {
+        "value": "4",
+        "suffix": "",
+        "label": "Product divisions"
+      },
+      {
+        "value": "1000",
+        "suffix": "+",
+        "label": "SKUs stocked"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "On-time dispatch"
+      }
+    ],
+    "ctaBanner": {
+      "label": "Need a quote?",
+      "title": "Send your list. Get a wholesale quote in 24 hours.",
+      "body": "Tell us what you need — hardware, spices, dry fruits or packaging, loose or bulk. We'll quote rates and lead time the same working day."
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
+        "label": "Spices & Masale"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=900&q=80",
+        "label": "Hardware & Fasteners"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?auto=format&fit=crop&w=900&q=80",
+        "label": "Dry Fruits & Nuts"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=900&q=80",
+        "label": "Polybags"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=900&q=80",
+        "label": "Whole spices, graded fresh"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80",
+        "label": "In-house fabrication"
+      }
+    ]
+  },
+  "products": {
+    "seo": {
+      "title": "Divisions | Hardware, Spices, Dry Fruits & Packaging — Swastik Enterprises",
+      "description": "Explore our four divisions: industrial hardware & fasteners, spices & masale, dry fruits & nuts, and polybags & packaging. Loose or bulk.",
+      "path": "/products.html"
+    },
+    "header": {
+      "eyebrow": "Our divisions",
+      "title": "Four aisles, thousands of SKUs.",
+      "subtitle": "From bolts to badam to printed pouches — explore what Swastik supplies, loose or in bulk."
+    },
+    "categories": [
+      {
+        "id": "hardware",
+        "code": "01",
+        "name": "Hardware & Fasteners",
+        "accent": "#566169",
+        "tagline": "Bolts to brackets",
+        "summary": "Nuts, bolts, screws, washers and industrial hardware — plus in-house custom metal fabrication.",
+        "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1200&q=80",
+        "items": [
+          "Bolts, nuts & screws",
+          "Washers, anchors & studs",
+          "High-tensile fasteners",
+          "Hand & power tools",
+          "Custom CNC & laser parts"
+        ],
+        "long": "The division we started with. A deep inventory of nuts, bolts, screws, washers and fasteners across grades and sizes, backed by in-house CNC machining, laser cutting and finishing for custom metal parts.",
+        "specs": [
+          "Grades 8.8 / 10.9 / 12.9",
+          "M3 – M48 diameters",
+          "Plain, zinc & galvanised",
+          "Custom fabrication available",
+          "Loose or bulk packs"
+        ],
+        "applications": [
+          "Manufacturers & OEMs",
+          "Fabricators & workshops",
+          "Builders & contractors",
+          "Maintenance & MRO"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1426927308491-6380b6a9936f?auto=format&fit=crop&w=600&q=80"
+        ]
+      },
+      {
+        "id": "spices",
+        "code": "02",
+        "name": "Spices & Masale",
+        "accent": "#b0402c",
+        "tagline": "Every masala, one roof",
+        "summary": "Every masala under one roof — whole & ground, single spices and blends: haldi, lal mirch, Kashmiri lal mirch, garam masala, jeera and many more.",
+        "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80",
+        "items": [
+          "Haldi / Turmeric",
+          "Lal Mirch / Red Chilli",
+          "Kashmiri Lal Mirch",
+          "Garam Masala",
+          "Khade Masale (whole spices)",
+          "Jeera / Cumin",
+          "Dhaniya / Coriander",
+          "Kali Mirch / Black Pepper",
+          "Laung / Cloves",
+          "Elaichi / Cardamom",
+          "Hing / Asafoetida",
+          "Saunf / Fennel",
+          "Chicken & Meat Masalas",
+          "Chaat & Pav Bhaji Masala",
+          "South Indian (Sambhar, Rasam)",
+          "Custom spice blends"
+        ],
+        "long": "If it is a spice, we stock it. Whole khade masale and freshly ground powders — haldi, lal mirch, Kashmiri lal mirch, jeera, dhaniya, kali mirch, laung, elaichi, hing and more — plus garam masala, chaat masala, chicken and South Indian blends. Graded for colour and aroma, supplied loose or packed to any size.",
+        "specs": [
+          "Whole & ground",
+          "Single spices & masala blends",
+          "Regular & Kashmiri chilli",
+          "South Indian & chicken masalas",
+          "Food-grade · loose or packed"
+        ],
+        "applications": [
+          "Restaurants & cloud kitchens",
+          "Caterers & sweet shops",
+          "Retailers & kirana stores",
+          "Re-packers & brands"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=80"
+        ]
+      },
+      {
+        "id": "dryfruits",
+        "code": "03",
+        "name": "Dry Fruits & Nuts",
+        "accent": "#b07a35",
+        "tagline": "Badam, kaju, kishmish",
+        "summary": "Almonds, cashews, raisins, pistachios and all dry fruits — premium grades, bulk or loose.",
+        "image": "https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?auto=format&fit=crop&w=1200&q=80",
+        "items": [
+          "Almonds (badam)",
+          "Cashews (kaju)",
+          "Raisins (kishmish)",
+          "Pistachios & walnuts",
+          "Mixed dry fruits & seeds"
+        ],
+        "long": "Premium dry fruits and nuts in multiple grades — almonds, cashews, raisins, pistachios, walnuts and more. Hand-checked for quality and supplied loose or in sealed bulk and gift packs.",
+        "specs": [
+          "Multiple grades & sizes",
+          "Plain, roasted & salted",
+          "Sealed for freshness",
+          "Loose or packed",
+          "Festive & gift packs"
+        ],
+        "applications": [
+          "Sweet shops & bakeries",
+          "Caterers & hotels",
+          "Retailers & kirana stores",
+          "Gifting & corporate"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1563412580953-7c0e9e0a0e0d?auto=format&fit=crop&w=600&q=80"
+        ]
+      },
+      {
+        "id": "packaging",
+        "code": "04",
+        "name": "Polybags",
+        "accent": "#6f8a6a",
+        "tagline": "Every size, plain or printed",
+        "summary": "Poly bags in every size and gauge — plain or printed, food-grade — loose or in bulk.",
+        "image": "https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=1200&q=80",
+        "items": [
+          "Small to large poly bags",
+          "Food-grade poly bags",
+          "Plain & printed",
+          "Custom sizes & gauges",
+          "Bulk / wholesale rolls"
+        ],
+        "long": "Poly bags for every need — from small grocery bags to large heavy-gauge bags, plain or printed to your design. Food-grade options for spices and dry fruits. Bought loose or in bulk.",
+        "specs": [
+          "Small to large sizes",
+          "Plain & printed",
+          "Food-grade options",
+          "Custom gauges",
+          "Bulk / wholesale"
+        ],
+        "applications": [
+          "Spice & dry-fruit packing",
+          "Retail & kirana",
+          "Manufacturers",
+          "Distributors"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80"
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "seo": {
+      "title": "Services | Bulk Supply, Loose & Packed, Custom Packaging — Swastik Enterprises",
+      "description": "Wholesale bulk supply, loose & packed quantities, custom poly packaging, sourcing and in-house hardware fabrication.",
+      "path": "/capabilities.html"
+    },
+    "header": {
+      "eyebrow": "How we supply",
+      "title": "More than a price list.",
+      "subtitle": "However you buy — a single carton or a full truckload, loose or packed — we make it simple."
+    },
+    "list": [
+      {
+        "code": "S1",
+        "name": "Bulk Wholesale Supply",
+        "desc": "Truckload quantities of hardware, spices, dry fruits and packaging at direct wholesale rates."
+      },
+      {
+        "code": "S2",
+        "name": "Loose & Packed",
+        "desc": "Buy loose by the kilo or pre-packed in retail and bulk poly packs — your choice of size."
+      },
+      {
+        "code": "S3",
+        "name": "Polybag Supply",
+        "desc": "Poly bags in every size and gauge — plain or printed, food-grade — loose or in bulk."
+      },
+      {
+        "code": "S4",
+        "name": "Sourcing & Consolidation",
+        "desc": "Hard-to-find grades, varieties and SKUs sourced and consolidated into one delivery."
+      },
+      {
+        "code": "S5",
+        "name": "Hardware Fabrication",
+        "desc": "In-house CNC machining, laser cutting and finishing for custom metal parts to your drawing."
+      },
+      {
+        "code": "S6",
+        "name": "Quality & Hygiene",
+        "desc": "Food-grade handling for spices & dry fruits; tested grades and certificates for hardware."
+      }
+    ]
+  },
+  "process": {
+    "label": "How we work",
+    "title": "From your list to your dock in four steps.",
+    "steps": [
+      {
+        "no": "01",
+        "name": "Share your list",
+        "desc": "Send what you need — hardware, spices, dry fruits or packaging, loose or bulk."
+      },
+      {
+        "no": "02",
+        "name": "Quote & confirm",
+        "desc": "A clear wholesale quote with rates and lead time, usually within 24 hours."
+      },
+      {
+        "no": "03",
+        "name": "Pack & quality-check",
+        "desc": "We weigh, grade, pack and QC every order to your spec — food-grade where it matters."
+      },
+      {
+        "no": "04",
+        "name": "Dispatch on time",
+        "desc": "Packed and shipped across India, with documents and certificates where you need them."
+      }
+    ]
+  },
+  "industries": {
+    "seo": {
+      "title": "Who We Serve | Swastik Enterprises",
+      "description": "Trusted by manufacturers, restaurants, sweet shops, retailers, distributors and packers for hardware, spices, dry fruits and packaging.",
+      "path": "/industries.html"
+    },
+    "header": {
+      "eyebrow": "Who we serve",
+      "title": "Stocked into businesses like yours.",
+      "subtitle": "Different counters, one need: dependable supply, fair rates and on-time delivery."
+    },
+    "list": [
+      {
+        "name": "Manufacturers & OEMs",
+        "desc": "Fasteners, hardware and custom metal parts that keep production lines moving.",
+        "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Restaurants & Cloud Kitchens",
+        "desc": "Fresh whole & ground spices and dry fruits, delivered in the sizes you cook with.",
+        "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Sweet Shops & Caterers",
+        "desc": "Premium dry fruits, nuts and spices in bulk for halwais, bakers and caterers.",
+        "image": "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Retailers & Kirana",
+        "desc": "Retail and bulk packs of spices, dry fruits and hardware for the shelf.",
+        "image": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Distributors & Wholesalers",
+        "desc": "Consolidated, well-priced supply across all four divisions in one order.",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Packers & Exporters",
+        "desc": "Food-grade poly bags in every size — plain or printed — for packing and shipping.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80"
+      }
+    ]
+  },
+  "why": {
+    "label": "Why Swastik",
+    "title": "Reasons buyers keep coming back.",
+    "list": [
+      {
+        "name": "Four aisles, one supplier",
+        "desc": "Hardware, spices, dry fruits and packaging from a single trusted vendor — one invoice, one delivery."
+      },
+      {
+        "name": "Bulk or loose",
+        "desc": "Order a single carton or a full truckload, loose by the kilo or packed — same reliable service."
+      },
+      {
+        "name": "Wholesale pricing",
+        "desc": "Direct, fair rates with transparent quotes and no surprises."
+      },
+      {
+        "name": "On-time delivery",
+        "desc": "Honest lead times and a 98% on-time dispatch record across India."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "We get our masale and dry fruits from Swastik every week — consistent quality and the rates beat the mandi. One call, one delivery.",
+      "name": "Imran Qureshi",
+      "role": "Owner, Multi-cuisine Restaurant"
+    },
+    {
+      "quote": "Fasteners on Monday, printed polybags on Thursday — having hardware and packaging from one vendor cut our purchase work in half.",
+      "name": "Rohit Sharma",
+      "role": "Purchase Head, Auto-Component OEM"
+    },
+    {
+      "quote": "Bulk almonds and cashews for the festive season arrived graded, sealed and on time. A genuinely reliable supplier.",
+      "name": "Anjali Mehta",
+      "role": "Owner, Sweets & Gifting"
+    }
+  ],
+  "about": {
+    "seo": {
+      "title": "About Us | Swastik Enterprises",
+      "description": "From a 2009 hardware counter to a four-division wholesale house — hardware, spices, dry fruits and packaging, supplied loose or in bulk.",
+      "path": "/about.html"
+    },
+    "header": {
+      "eyebrow": "Our story",
+      "title": "From one counter to four divisions.",
+      "subtitle": "A hands-on family business that grew by saying yes to what our customers needed next."
+    },
+    "story": [
+      "Swastik Enterprises started in 2015 as a single hardware counter selling fasteners to local fabricators. The promise was simple: the right item, in stock, at a fair price.",
+      "As our customers' needs grew, so did we. Restaurants asked for spices, sweet shops for dry fruits, packers for polybags — and instead of sending them elsewhere, we built each into a proper division. Today four aisles run under one roof and one trusted relationship.",
+      "We're still, at heart, the supplier that picks up the phone, quotes honestly and delivers on time — whether you need a carton of bolts, a sack of jeera or a truckload of almonds."
+    ],
+    "values": [
+      {
+        "name": "Reliability",
+        "desc": "If we commit a date, we hit it. Your shelves and your line shouldn't wait on us."
+      },
+      {
+        "name": "Honest pricing",
+        "desc": "Direct wholesale rates and transparent quotes — no surprises on the invoice."
+      },
+      {
+        "name": "Partnership",
+        "desc": "We win when your business runs smoothly — so we act like part of your team."
+      }
+    ],
+    "stats": [
+      {
+        "value": "2015",
+        "suffix": "",
+        "label": "Founded"
+      },
+      {
+        "value": "4",
+        "suffix": "",
+        "label": "Divisions"
+      },
+      {
+        "value": "40",
+        "suffix": "+",
+        "label": "People on the team"
+      },
+      {
+        "value": "600",
+        "suffix": "+",
+        "label": "Active clients"
+      }
+    ],
+    "team": [
+      {
+        "name": "Deepak Chaurasia",
+        "role": "Founder & Owner",
+        "bio": "Started Swastik in 2009 and still personally approves every supplier and grade.",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Rajni Chaurasia",
+        "role": "Manager",
+        "bio": "Keeps sourcing, packing and dispatch across all four divisions running like clockwork.",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Anshul Chaurasia",
+        "role": "Technical & Support Lead",
+        "bio": "Your point of contact — quotes, custom orders, packaging and after-sales support.",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80"
+      }
+    ]
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact & Wholesale Quote | Swastik Enterprises",
+      "description": "Get a wholesale quote on hardware, spices, dry fruits or packaging. Send your list and hear back within 24 hours.",
+      "path": "/contact.html"
+    },
+    "header": {
+      "eyebrow": "Let's talk supply",
+      "title": "Tell us what you need to stock.",
+      "subtitle": "A shopping list, a sample, or a rough idea — whatever stage you're at, we'll quote rates and lead time within one working day."
+    },
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Full name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Your name"
+        },
+        {
+          "name": "company",
+          "label": "Business / shop",
+          "type": "text",
+          "required": false,
+          "placeholder": "Business name"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "placeholder": "you@business.com"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "tel",
+          "required": false,
+          "placeholder": "+91 ..."
+        },
+        {
+          "name": "interest",
+          "label": "I'm interested in",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Hardware & fasteners",
+            "Spices & masale",
+            "Dry fruits & nuts",
+            "Polybags & packaging",
+            "Bulk / wholesale order",
+            "Something else"
+          ]
+        },
+        {
+          "name": "message",
+          "label": "Your requirement",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Items, quantities, loose or packed, target date..."
+        }
+      ],
+      "submit": "Send enquiry",
+      "note": "We reply within one working day. No spam, ever."
+    }
+  },
+  "footer": {
+    "blurb": "Hardware, spices, dry fruits and poly packaging — wholesale, loose or in bulk, under one roof since 2015.",
+    "columns": [
+      {
+        "title": "Divisions",
+        "links": [
+          {
+            "label": "Hardware & Fasteners",
+            "href": "/product.html?id=hardware"
+          },
+          {
+            "label": "Spices & Masale",
+            "href": "/product.html?id=spices"
+          },
+          {
+            "label": "Dry Fruits & Nuts",
+            "href": "/product.html?id=dryfruits"
+          },
+          {
+            "label": "Polybags",
+            "href": "/product.html?id=packaging"
+          }
+        ]
+      },
+      {
+        "title": "Explore",
+        "links": [
+          {
+            "label": "Services",
+            "href": "/capabilities.html"
+          },
+          {
+            "label": "Customers",
+            "href": "/industries.html"
+          },
+          {
+            "label": "About",
+            "href": "/about.html"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact.html"
+          }
+        ]
+      }
+    ],
+    "legal": "All rights reserved."
+  },
+  "productDetail": {
+    "seo": {
+      "title": "Division | Swastik Enterprises",
+      "description": "Division details, range and applications from Swastik Enterprises."
+    }
+  },
+  "partners": {
+    "label": "Partners & Distributors",
+    "title": "Trusted by businesses across the region.",
+    "subtitle": "A few of the partners and distributors who stock and supply with Swastik.",
+    "list": [
+      {
+        "name": "Family Super Mart",
+        "note": "Retail & distribution partner"
+      },
+      {
+        "name": "Ganpati Fabricators",
+        "note": "Hardware & fabrication partner"
+      },
+      {
+        "name": "Maruti Company",
+        "note": "Wholesale distribution partner"
+      }
+    ]
+  },
+  "catalog": {
+    "seo": {
+      "title": "Products | Swastik Enterprises",
+      "description": "The full product list across hardware, spices, dry fruits and packaging — buy loose or in bulk.",
+      "path": "/catalog.html"
+    },
+    "header": {
+      "eyebrow": "Full product list",
+      "title": "Everything we stock.",
+      "subtitle": "Every product across our four divisions — ask for loose or bulk, packed to your size."
+    }
+  }
+}
