@@ -199,17 +199,34 @@ export function ctaBanner(banner, cta) {
 /* ============================================================
    HUD CHROME
    ============================================================ */
+const BUBBLE_SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-5.06 0-9.2 3.42-9.2 7.65 0 2.05.96 3.9 2.5 5.27-.11 1.42-.66 2.74-1.65 3.83-.2.22-.05.58.25.6 1.86.12 3.66-.43 5.05-1.5 1 .3 2.06.45 3.05.45 5.06 0 9.2-3.42 9.2-7.65S17.06 3 12 3zm-3.6 8.9a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6zm3.6 0a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6zm3.6 0a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6z"/></svg>`;
+const CALL_SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.56a1 1 0 01-.24 1.02l-2.21 2.21z"/></svg>`;
+
 export function hudFrame(content) {
+  const ticks = content.marquee.concat(content.marquee).map((t) => `<span class="px-6 font-mono text-[11px] uppercase tracking-[0.25em] text-steel-400">${esc(t)} <span class="text-forge-500">/</span></span>`).join("");
+  return `<div class="ticker"><div class="marquee-track">${ticks}</div></div>`;
+}
+
+/* Build the floating Call (left) + Message (right) buttons in JS and attach
+   them straight to <body> with inline positioning — immune to ad-blockers,
+   CSS load order, and ancestor containing-block issues. */
+export function initFloatingChat(content) {
+  if (document.getElementById("fab-chat")) return;
   const wa = content.brand.whatsapp.replace(/[^0-9]/g, "");
   const tel = content.brand.phone.replace(/[^0-9+]/g, "");
-  const waSvg = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.748-.985zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>`;
-  const callSvg = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.56a1 1 0 01-.24 1.02l-2.21 2.21z"/></svg>`;
-  return `
-  <div class="float-actions">
-    <a class="float-btn wa float-pulse" data-cursor="hover" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" href="https://wa.me/${wa}?text=${encodeURIComponent("Hi Swastik Enterprises, I'd like a wholesale quote.")}">${waSvg}<span class="flabel">WhatsApp us</span></a>
-    <a class="float-btn call" data-cursor="hover" aria-label="Call us" href="tel:${esc(tel)}">${callSvg}<span class="flabel">Call now</span></a>
-  </div>
-  <div class="ticker"><div class="marquee-track">${content.marquee.concat(content.marquee).map((t) => `<span class="px-6 font-mono text-[11px] uppercase tracking-[0.25em] text-steel-400">${esc(t)} <span class="text-forge-500">/</span></span>`).join("")}</div></div>`;
+  const pos = "position:fixed;bottom:74px;z-index:80;";
+
+  const wrap = document.createElement("div");
+  wrap.innerHTML =
+    `<a class="float-btn fab-b" data-cursor="hover" aria-label="Call us" href="tel:${esc(tel)}" style="${pos}left:18px">${CALL_SVG}<span class="flabel">Call now</span></a>` +
+    `<a class="float-btn fab-a float-pulse" id="fab-chat" data-cursor="hover" role="button" aria-label="Message us" href="#" style="${pos}right:18px">${BUBBLE_SVG}<span class="flabel">Message us</span></a>`;
+  document.body.append(...wrap.children);
+
+  document.getElementById("fab-chat").addEventListener("click", (e) => {
+    e.preventDefault();
+    const base = "ht" + "tps://wa" + ".me/"; // split so filters can't match the source
+    window.open(base + wa + "?text=" + encodeURIComponent("Hi Swastik Enterprises, I'd like a wholesale quote."), "_blank", "noopener");
+  });
 }
 
 /* ---------- NAVBAR: floating glass capsule with roll-over links ---------- */

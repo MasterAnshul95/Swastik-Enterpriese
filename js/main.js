@@ -2,7 +2,7 @@
    main.js — orchestrator (single entry for every page).
    loads JSON -> mounts HUD + chrome -> builds page -> 3D + motion.
    ============================================================ */
-import { navbar, footer, hudFrame } from "./components.js";
+import { navbar, footer, hudFrame, initFloatingChat } from "./components.js";
 import { builders } from "./pages.js";
 import { initAnimations } from "./animations.js";
 
@@ -77,6 +77,7 @@ async function boot() {
   if (year) year.textContent = new Date().getFullYear();
 
   handleForm();
+  initFloatingChat(content);
   initAnimations();
   // 3D scene retired in the light theme (kept for reference): loadScene(page);
   void loadScene;

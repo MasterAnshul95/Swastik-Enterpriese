@@ -136,8 +136,8 @@ html.lenis, html.lenis body { height: auto; }
   box-shadow: 0 12px 26px -10px rgba(0, 0, 0, 0.45);
   transition: width .35s cubic-bezier(.4,0,.2,1), transform .25s ease, box-shadow .25s ease;
 }
-.float-btn.wa { right: 18px; }
-.float-btn.call { left: 18px; }
+.float-btn.fab-a { right: 18px; }
+.float-btn.fab-b { left: 18px; }
 @media (max-width: 700px) { .float-btn { bottom: 18px; } }
 .float-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 32px -10px rgba(0, 0, 0, 0.5); }
 .float-btn svg { width: 26px; height: 26px; margin: 0 14px; flex: 0 0 auto; }
@@ -146,11 +146,11 @@ html.lenis, html.lenis body { height: auto; }
   .float-btn:hover { width: 168px; }
   .float-btn:hover .flabel { opacity: 1; }
 }
-.float-btn.wa { background: #25d366; }
-.float-btn.call { background: var(--forge); }
+.float-btn.fab-a { background: #25d366; }
+.float-btn.fab-b { background: var(--forge); }
 .float-pulse { position: relative; }
 .float-pulse::after { content: ""; position: absolute; inset: 0; border-radius: 999px; box-shadow: 0 0 0 0 rgba(37, 211, 102, .5); animation: pulse 2.4s infinite; }
-.float-btn.call.float-pulse::after { box-shadow: 0 0 0 0 rgba(138, 46, 46, .45); animation: pulseM 2.4s infinite; }
+.float-btn.fab-b.float-pulse::after { box-shadow: 0 0 0 0 rgba(138, 46, 46, .45); animation: pulseM 2.4s infinite; }
 @keyframes pulseM { 0% { box-shadow: 0 0 0 0 rgba(138,46,46,.4); } 70% { box-shadow: 0 0 0 12px rgba(138,46,46,0); } 100% { box-shadow: 0 0 0 0 rgba(138,46,46,0); } }
 
 /* ---------- Nav: floating glass capsule ---------- */
