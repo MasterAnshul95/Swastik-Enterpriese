@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://masteranshul95.github.io/Swastik-Enterpriese/sitemap.xml
+Sitemap: https://swastik-enterprisee.vercel.app/sitemap.xml
