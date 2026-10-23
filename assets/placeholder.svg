@@ -1,19 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1a1d24"/>
-      <stop offset="1" stop-color="#0e1014"/>
-    </linearGradient>
-    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
-      <path d="M46 0H0V46" fill="none" stroke="#7dd3fc" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-  </defs>
-  <rect width="800" height="600" fill="url(#g)"/>
-  <rect width="800" height="600" fill="url(#grid)"/>
-  <g transform="translate(400 300)" fill="none" stroke="#f97316" stroke-opacity="0.7">
-    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" stroke-width="3"/>
-    <circle r="44" stroke-width="4"/>
-    <circle r="26" stroke-width="2" stroke-opacity="0.4"/>
+  <rect width="800" height="600" fill="#ebe6db"/>
+  <g transform="translate(352 252) scale(3)" opacity=".55">
+    <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#3a5bd9"/>
+    <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#e2492d" transform="matrix(-1 0 0 1 32 0)"/>
+    <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#d69a2d" transform="rotate(180 16 16)"/>
+    <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#149e8a" transform="matrix(1 0 0 -1 0 32)"/>
   </g>
-  <text x="400" y="470" font-family="monospace" font-size="20" letter-spacing="6" fill="#4b5160" text-anchor="middle">SWASTIK ENTERPRISES</text>
+  <text x="400" y="400" font-family="ui-monospace, monospace" font-size="16" letter-spacing="5" fill="#8a8377" text-anchor="middle">SWASTIK ENTERPRISES</text>
 </svg>

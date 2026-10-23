@@ -1,91 +1,101 @@
 # Swastik Enterprises — Website
 
-A fast, animated, multi-page marketing site for **Swastik Enterprises** (industrial
-hardware, fasteners, metals & custom fabrication).
+Website for **Swastik Enterprises**, a four-division wholesaler: hardware &
+fasteners, spices & masale, dry fruits & nuts, and polybags. English at `/`,
+Hindi at `/hi/`.
 
-Built with **plain HTML + Tailwind (CDN) + GSAP/ScrollTrigger + Lenis + Three.js**
-— no build step, no framework. The design is a full-bleed **"FORGE-OS" industrial
-HUD**: a persistent reflective 3D metal bolt/nut/washer (Three.js) rotates behind
-edge-anchored content, framed by HUD readouts and a live section rail. All content
-lives in one JSON file; all UI is built from reusable component functions (zero
-copy-paste between pages).
+Plain **HTML + CSS + vanilla JS**: no framework and no npm packages. A
+small Node script pre-renders every page into finished HTML from one content
+file, so pages load instantly and search engines see real content.
 
-> **Why no Framer Motion?** Framer Motion is a React-only library and cannot run in
-> plain HTML. The same (often smoother) motion here is done with **GSAP + Lenis + CSS**,
-> which is the correct tool for a static HTML site.
-
----
-
-## Run it locally
-
-You need a tiny local web server (the pages load content via `fetch`, which browsers
-block on `file://`). Node is already required only for the server.
+## Run it
 
 ```bash
-# from this folder
-npm install      # installs the "serve" static server (one time)
-npm run dev      # serves at http://localhost:5173
+node server.mjs
 ```
 
-Then open **http://localhost:5173**.
+Open http://localhost:5173 (Hindi: http://localhost:5173/hi/). The server builds
+the site on start and **rebuilds automatically** whenever you save
+`data/*.json` or anything in `js/`. Just refresh the browser.
 
-**No Node?** Any static server works. Easiest alternatives:
-- VS Code → install the **Live Server** extension → right-click `index.html` → "Open with Live Server".
-- Python: `python -m http.server 5173` then open `http://localhost:5173`.
+## Edit content
 
----
+| What | Where |
+| --- | --- |
+| All English text, products, photos, phone, address, hours | `data/content.json` |
+| Hindi translations (only the text — ids/photos come from the English file) | `data/content.hi.json` |
+| Colours, fonts, spacing, animation | `assets/css/style.css` |
 
-## Edit the content (no coding)
+- Wrap a word in `*asterisks*` in any title for the italic accent.
+- Each product line has an `id` (keep it stable — saved quote lists use it), a `name`
+  (`"Haldi / Turmeric"` shows *Haldi* with *Turmeric* underneath) and an `image`.
+- Unsplash image links are resized automatically; any other path
+  (e.g. `assets/img/haldi.jpg`) is used as-is. Broken images fall back to a placeholder.
+- `brand.credentials` — add your **FSSAI** number, **GSTIN** and a **Google reviews**
+  link; they appear in the footer and on the contact page as soon as they're filled in.
+- `brand.mapsQuery` — what the contact-page map searches for. Check the pin is right.
 
-Everything you read on the site — headlines, product lists, stats, contact details —
-lives in **`data/content.json`**. Change the text there, refresh the browser, done.
+### Publishing
 
-- Phone / email / address → `brand`
-- Hero headline → `home.hero`
-- Product categories → `products.categories`
-- Capabilities → `capabilities.list`
-- Industries → `industries.list`
-- Page titles & meta descriptions (SEO) → each section's `seo`
+Run `node build.mjs` (or just keep `node server.mjs` running while you edit), then
+upload the whole folder to any static host (Netlify, Cloudflare Pages, GitHub Pages,
+regular hosting). Replace `https://swastikenterprises.example` in
+`data/content.json → meta.siteUrl` with the real domain and rebuild.
 
-Swap any image by replacing its URL in `content.json`. Current images are free,
-licence-safe photos from **Unsplash**. For best performance, download the ones you
-want and host them in an `assets/img/` folder, then point the URLs there.
+### Enquiry form
 
----
+With no backend, the form opens WhatsApp (or the email app) with the enquiry
+fully written out. To receive submissions on a server instead, put a form
+endpoint (Formspree, Web3Forms, your own) in `contact.form.endpoint`.
 
-## Project structure
+## What's in it
+
+- **Hero counter:** product tokens drop in with real physics (Matter.js). Drag them
+  around; tap one to add it to the quote list.
+- **Kinetic headline:** letters thicken as the cursor passes (variable fonts).
+- **Quote list:** add lines from anywhere, set quantity + unit, then
+  - **Paste a list** — type or paste "haldi 25 kg / kaju 10kg / M12 bolts 500";
+    it understands Hindi, Hinglish, typos, quintals and tons,
+  - send it on **WhatsApp**, carry it into the enquiry form, **share a link**
+    to the list, or **save it as a PDF**,
+  - **Past lists** are kept so repeat buyers can re-order in one tap.
+- **Search everything:** press `/` (or Ctrl/⌘+K). Typo-tolerant, Hindi-aware, with voice
+  search where the browser supports it.
+- **Snap your list** (contact page) — photograph a handwritten list and share it to
+  WhatsApp; **call-back request**; live **open/closed** status in IST; map.
+- Native **page transitions** (the division photo morphs into the next page),
+  **scroll-driven animation** in pure CSS, spring easing, a sticky quote bar on phones.
+- **Installable app** with offline support (service worker; switched off on localhost).
+- Unique tools per page: division accordion, polybag calculator, industry
+  explorer with starter lists, order configurator, comparison tables, gallery lightbox,
+  printable division catalogue.
+
+## Structure
 
 ```
-index.html  products.html  capabilities.html  industries.html  about.html  contact.html
-│   thin SEO shells — each just declares its page + loads the shared scripts
-│
-├─ data/content.json     ← ALL site copy & image URLs (single source of truth)
-├─ assets/styles.css     ← FORGE-OS styles (full-bleed layout, HUD) on top of Tailwind
-├─ assets/placeholder.svg← shown automatically if any remote image fails to load
-├─ favicon.svg  robots.txt  sitemap.xml
-└─ js/
-   ├─ config.js          ← Tailwind theme tokens (colours, fonts) — defined once
-   ├─ components.js       ← reusable UI blocks (HUD, navbar, footer, cards, marquee…)
-   ├─ pages.js            ← composes blocks into each page's body (full-bleed sections)
-   ├─ scene3d.js          ← Three.js metal bolt/nut/washer (scroll-rotate + cursor)
-   ├─ animations.js       ← Lenis smooth scroll + GSAP reveals / split-text / HUD rail
-   └─ main.js             ← loads JSON, mounts components, boots 3D + animations
+build.mjs            renders every page (EN + HI) to static HTML
+server.mjs           dev server: build on start + on change
+data/content.json    all copy, products, photos (English)
+data/content.hi.json Hindi overrides
+assets/css/style.css the design system
+js/ui.js             shared components (used at build time and in the browser)
+js/chrome.js         nav, menu, footer
+js/pages.js          one render() + init() per page
+js/main.js           browser entry: reads the page's data island, wires behaviour
+js/quote.js          quote list, drawer, paste parser hookup, share, PDF, history
+js/search.js         fuzzy + Hindi/English search and the list parser
+js/palette.js        "/" search palette + voice
+js/motion.js         reveals, counters, kinetic type, widgets, view-transition hand-off
+js/physics.js        the hero counter
+sw.js, manifest.webmanifest   offline + install
+hi/                  generated Hindi pages
 ```
 
-The 3D scene and all animation degrade gracefully: if WebGL or any CDN is blocked,
-the site still renders fully (the 3D canvas and motion simply switch off).
+Old `product.html?id=…` links redirect to the new division pages.
 
-## Pages
+## Before going live
 
-`Home` · `Products` · `Capabilities` · `Industries` · `About` · `Contact`
-
-## Going live
-
-Upload the whole folder to any static host (Netlify, Vercel, Cloudflare Pages,
-GitHub Pages, or normal web hosting). Before launch, replace
-`https://swastikenterprises.example` in the `<link rel="canonical">`, Open Graph
-tags, `robots.txt` and `sitemap.xml` with your real domain.
-
-The contact form currently shows a success message only (no backend). To receive
-real enquiries, connect it to a service like Formspree, Web3Forms or your own
-endpoint in `js/main.js` → `handleForm()`.
+- Real domain in `meta.siteUrl`; confirm the email, the stats (600+ clients,
+  40+ team, 98% on-time) and the testimonials are real.
+- Add FSSAI / GSTIN / reviews link, partner logo files and your own photos
+  (shop, team, warehouse) when available — they'll lift trust more than anything else.

@@ -1,0 +1,19 @@
+{
+  "name": "Swastik Enterprises — Wholesale",
+  "short_name": "Swastik",
+  "description": "Hardware, spices, dry fruits and polybags — build a wholesale quote list and send it on WhatsApp.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f1ea",
+  "theme_color": "#f4f1ea",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "All products", "url": "./catalog.html" },
+    { "name": "Contact", "url": "./contact.html" },
+    { "name": "हिंदी", "url": "./hi/index.html" }
+  ]
+}

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#08090c"/>
-  <polygon points="32,8 53,20 53,44 32,56 11,44 11,20" fill="none" stroke="#f97316" stroke-width="3"/>
-  <circle cx="32" cy="32" r="11" fill="none" stroke="#f97316" stroke-width="4"/>
-  <text x="32" y="40" font-family="monospace" font-size="14" font-weight="700" fill="#f97316" text-anchor="middle">S</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#3a5bd9"/>
+  <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#e2492d" transform="matrix(-1 0 0 1 32 0)"/>
+  <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#d69a2d" transform="rotate(180 16 16)"/>
+  <path d="M15 15H7.2A5.2 5.2 0 0 1 2 9.8V7.2A5.2 5.2 0 0 1 7.2 2h2.6A5.2 5.2 0 0 1 15 7.2z" fill="#149e8a" transform="matrix(1 0 0 -1 0 32)"/>
 </svg>

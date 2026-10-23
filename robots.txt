@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://swastikenterprises.example/sitemap.xml
+Sitemap: https://masteranshul95.github.io/Swastik-Enterpriese/sitemap.xml
