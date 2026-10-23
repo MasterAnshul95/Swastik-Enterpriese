@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://swastik-enterprisee.vercel.app/sitemap.xml
+Sitemap: https://swastik-enterpriese.vercel.app/sitemap.xml
